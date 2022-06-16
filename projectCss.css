@@ -1,0 +1,11 @@
+.border{
+    border: 5px solid blue;
+    border: 5px solid blue;
+    padding: 30px;
+    margin: 50px;
+    height: 150px;
+    background: rgb(190, 69, 214);
+}
+.border1{
+    border: 5px rgb(255, 255, 255);
+}
