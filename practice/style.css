@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  width: 80em;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -20,8 +20,8 @@ h2 {
   font-size: 3.2em;
 }
 
-pli {
-  font-size: 1.7em;
+p,li {
+  font-size: 2em;
 }
 
 /*+++ more specific section styles +++*/
@@ -29,13 +29,13 @@ pli {
 /* header and footer */
 
 header, footer {
-  background-colour: teal;
+  background-color: teal;
   height: 10em;
   padding: 2em;
 }
 
 h1, footer p {
-  margin: -70px;
+  margin: 0px;
 }
 
 h1 {
@@ -54,6 +54,6 @@ main p, main li {
 }
 
 img {
-  float: right
+  float: right;
   margin: 1.2em 2em;
 }
