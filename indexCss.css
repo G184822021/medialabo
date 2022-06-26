@@ -1,5 +1,6 @@
 div.zentai{
     display: grid;
+    font-size: 0.5cm;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: minmax(100px,auto);
     grid-gap: 20px;
