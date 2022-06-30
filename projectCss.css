@@ -1,10 +1,9 @@
 .border{
-    border: 5px solid blue;
-    border: 5px solid blue;
+    border: 5px solid rgb(0, 255, 115);
     padding: 30px;
     margin: 50px;
     height: 150px;
-    background: rgb(190, 69, 214);
+    background: rgba(128, 139, 243, 0.479);
 }
 .border1{
     border: 5px rgb(255, 255, 255);

@@ -5,13 +5,14 @@ div.zentai{
     grid-template-rows: minmax(100px,auto);
     grid-gap: 20px;
     margin: 2cm;
+    color: rgb(212, 200, 241);
+    background-color: rgb(196, 196, 196);
 }
 .box1{
-    background-color: rgb(7, 7, 8);
-    color: rgb(255, 255, 255);
+    background-color: rgb(158, 156, 165);
 }
-.box2{
-
+.box{
+    color: rgb(212, 200, 241);
 }
   
   
