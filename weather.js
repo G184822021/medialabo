@@ -46,18 +46,6 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-let name = data.name;
-let tempMax  = data.main.temp_max;
-let tempMin  = data.main.temp_min;
-let c = document.querySelector('tr#name');
-let cE =document.createElement('td');
-c.insertAdjacentElement('beforebegin',cE);
-let tmax = document.querySelector('tr#tempMax');
-let tmaxE =document.createElement('td');
-c.insertAdjacentElement('beforebegin',tmaxE);
-let tmin = document.querySelector('tr#tempMin');
-let tminE =document.createElement('td');
-c.insertAdjacentElement('beforebegin',tmaxE);
 
   console.log(data.name);
   console.log(data.main.temp_max);
