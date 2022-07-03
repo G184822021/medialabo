@@ -46,7 +46,13 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
-
+let weatherDatas = {name : data.name,temp_max : data.main.temp_max, temp_min : data.main.temp_min};
+for (let data in weatherDatas){
+let element = document.createElement('td');
+let place = document.querySelector('tr#'+data);
+element.textContent = weatherDatas[data];
+place.insertAdjacentElement('beforeend',element);
+}
   console.log(data.name);
   console.log(data.main.temp_max);
   console.log(data.main.temp_min);
