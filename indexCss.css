@@ -1,18 +1,66 @@
 div.zentai{
     display: grid;
     font-size: 0.5cm;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(100px,auto);
-    grid-gap: 20px;
+    grid-gap: 60px;
+    border-color: #3ebb2f;
     margin: 2cm;
-    color: rgb(37, 31, 91);
-    background-color: rgb(160, 158, 164);
+    /* color: rgb(195, 215, 190); */
+    /* background-color: rgb(255, 255, 255); */
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+    text-align: center;
+}
+.main{
+    text-align: center;
 }
 .box1{
-    background-color: rgba(210, 201, 245, 0.842);
+    position: relative;
+    border-width: 1cm;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(223, 236, 211, 0.834);
+}
+body{
+    background-color: rgb(29, 15, 60);
 }
 .box{
+    position: relative;
+    background-color:rgba(226, 202, 240, 0.937);
 }
-  
+.position{
+        position:
+        absolute;
+        bottom: -1034px;
+        left: -600px;
+ }
+ .position2{
+    position:
+    absolute;
+    bottom: -1234px;
+    left: -1050px;
+}
+ .nijuumaru{
+    z-index: -11;
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 60%;
+    border: 200px solid #88abda;
+}
+.nijuumaru:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    border: 200px solid #88abda;
+}
+
   
 
