@@ -48,25 +48,74 @@ let data = {
 ////////// 課題3-2 ここからプログラムを書こう
 /* データを入れる処理
 */
-let weatherDatas = {name : data.name,temp_max : data.main.temp_max, temp_min : data.main.temp_min};
+let weatherDatas;// = {name : weatherDates.name,temp_max : weatherDates.main.temp_max, temp_min : weatherDates.main.temp_min};
 let rankingDates;
 for(let data in weatherDatas){
   rankingDates 
 }
-let b = document.querySelector('button');
-b.addEventListener('click',searchContry);
 // 
-function searchContry(event){
-  let country = event.target;
-  printDate(weatherDatas);
-}
+let inputNode = document.querySelector('input[name="search"]');
+let id = parseInt(inputNode.value);
 
+let b1 = document.querySelector('button');
+b1.addEventListener('click', sendRequest);
 
 function printDate(weatherDatas){
-  for (let data in weatherDatas){
-  let element = document.createElement('td');
-  let place = document.querySelector('tr#'+data);
-  element.textContent = weatherDatas[data];
-  place.insertAdjacentElement('beforeend',element);
+ let  datas = {name : weatherDatas.name,
+    temp_max : weatherDatas.main.temp_max, 
+    temp_min : weatherDatas.main.temp_min,
+    country : weatherDatas.sys.country,
+    weather : weatherDatas.weather.description,
+    speed : weatherDatas.wind.speed
   }
+  for(let data in datas){
+      let element = document.createElement('td');
+      let place = document.querySelector('tr#'+ data);
+      console.log(data[weather]);
+      element.textContent = datas[data];
+      place.insertAdjacentElement('beforeend',element);
+  }
+    
+      
+}
+
+// 通信を開始する処理
+function sendRequest() {
+	// URL を設定
+	let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/' + id + '.json';
+
+	// 通信開始
+	axios.get(url)
+		.then(showResult)
+		.catch(showError)
+		.then(finish);
+}
+
+// 通信が成功した時の処理
+function showResult(resp) {
+	// サーバから送られてきたデータを出力
+	weatherDatas = resp.data;
+
+	// data が文字列型なら，オブジェクトに変換する
+	if (typeof weatherDates === 'string') {
+		weatherDatas = JSON.parse(weatherDatas);
+	}
+
+	// data をコンソールに出力
+  printDate(weatherDatas);
+
+
+
+
+}
+
+// 通信エラーが発生した時の処理
+function showError(err) {
+  console.log('エラー');
+	console.log(err);
+}	
+
+// 通信の最後にいつも実行する処理
+function finish() {
+	console.log('Ajax 通信が終わりました');
 }

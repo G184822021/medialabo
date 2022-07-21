@@ -5,14 +5,25 @@
     <meta charset="utf-8">
     <title>世界の天気</title>
     <link rel="stylesheet" href="projectCss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
     <script src="weather.js"defer></script>
 </head>
 
 <body>
+    <div class="wrapper">
+
     <label for="search">都市を検索:</label>
     <input name="search" type="search" size="15">
     <button id="print">検索</button>
-    <table class="border">
+<p class="bule">1</p>
+<p class="red">2</p>
+<p class="green">3</p>
+<p></p>
+<div class="bule">
+<table class="border">
+
+
         <thead>
             <th colspan="5">世界の天気</th>
         </thead>
@@ -26,7 +37,7 @@
                 <td>カイロ</td>
 
             </tr>
-            <tr id='contry'>
+            <tr id='country'>
                 <td>国</td>
                 <td>日本</td>
                 <td>アメリカ合衆国</td>
@@ -58,16 +69,11 @@
                 <td>8</td>
                 <td>9</td>
             </tr>
+
             <tr>
-                <td>湿度</td>
-                <td>60％</td>
-                <td>80％</td>
-                <td>70％</td>
-                <td>60％</td>
-                <td>50％</td>
-            </tr>
-            <tr>
-                <td>風向</td>
+                <tr id='speed'>
+
+                <td>風速</td>
                 <td>東</td>
                 <td>北東</td>
                 <td>南東</td>
@@ -75,10 +81,10 @@
                 <td>北東</td>
             </tr>
 
-
         </tbody>
     </table>
-
+</div>
+</div>
 </body>
 
 </html>

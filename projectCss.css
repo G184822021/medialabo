@@ -8,6 +8,19 @@
 .border1{
     border: 5px rgb(255, 255, 255);
 }
-.em{
-    
+.red{
+   background-color: rgb(255, 175, 175); 
+}
+.bule{
+    background-color: rgb(200, 184, 255); 
+ }
+ .green{
+    background-color: rgb(87, 148, 87); 
+ }
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 30px 100px 500px;
+    grid-gap: 0cm;
+
 }
