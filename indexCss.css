@@ -1,6 +1,6 @@
 div.zentai{
     display: grid;
-    font-size: 0.5cm;
+    font-size: 0.7cm;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(100px,auto);
     grid-gap: 60px;
@@ -16,12 +16,16 @@ div.zentai{
 }
 .main{
     text-align: center;
+    width: 100%;
 }
 .box1{
     position: relative;
     border-width: 1cm;
     border-color: rgb(255, 255, 255);
     background-color: rgba(223, 236, 211, 0.834);
+    height: 80%;
+    text-align: center;
+    vertical-align:  middle; 
 }
 body{
     background-color: rgb(29, 15, 60);
@@ -61,6 +65,18 @@ body{
     border-radius: 50%;
     border: 200px solid #88abda;
 }
-
-  
+.last{
+    padding: auto;
+    margin :40px;
+    background-color: #88abda;
+}
+body{
+    font-size: 0.7cm;
+}
+  h1 {
+    color: #261a5b;
+  }
+  .kansou{
+    text-align: center;
+  }
 
