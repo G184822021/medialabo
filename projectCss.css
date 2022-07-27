@@ -1,8 +1,9 @@
 .border{
     border: 5px solid rgb(0, 255, 115);
-    padding: 30px;
-    margin: 50px;
-    height: 150px;
+    padding: 10px;
+    margin: auto;
+    height: 80%;
+    width: 90%;
     background: rgba(128, 139, 243, 0.479);
 }
 .border1{
@@ -20,7 +21,21 @@
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 30px 100px 500px;
+    grid-template-rows: 30px 50px 300px;
     grid-gap: 0cm;
 
+}
+p{
+    margin-block-end: 0em;
+}
+table,
+table td {
+    padding: auto;
+    border: 1px solid black;
+}
+
+table,
+div {
+    text-align: center;
+    vertical-align:  middle; 
 }
